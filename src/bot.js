@@ -17,8 +17,14 @@ client.on('message', (message) => {
     .trim()
     .substring(PREFIX.length)
     .split(/\s+/);
-  console.log(CMD_NAME);
-  console.log(args);
+  
+    if(CMD_NAME === 'kick'){
+      message.channel.send('kicked the user');
+    }else if (CMD_NAME === 'ban')
+    {
+      message.channel.send('Banned the user');
+
+    }
     
   }
 });
