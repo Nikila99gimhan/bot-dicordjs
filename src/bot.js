@@ -19,13 +19,12 @@ client.on('message', (message) => {
     .split(/\s+/);
   
     if(CMD_NAME === 'kick'){
-      message.channel.send('kicked the user');
-    }else if (CMD_NAME === 'ban')
-    {
-      message.channel.send('Banned the user');
+      if (args.length === 0) return message.reply('Please provide an ID');
+      const member = message.guild.members.cache.get(args[0]);
+     
 
-    }
-    
+     console.log(member);
+    } 
   }
 });
 
