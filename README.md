@@ -1,7 +1,7 @@
 ## discordBot
 
 # DJSBOT
-DJSBOT is a free, open-source, extensible bot for Discord servers, built on top of <a href="https://discord.js.org">discordJS </a>
+DJSBOT is a free, open-source, extensible bot for Discord servers, built on top of <a href="https://discord.js.org">discord JS </a>
 
  
  # Installation
